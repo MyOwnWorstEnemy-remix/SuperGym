@@ -129,7 +129,7 @@
               </div>
             </div>
           </div>
-          <p class="games__description">Ежегодные соревнования по CrossFit</p>
+          <p class="games__description">Ежегодные соревнования по CrossFit</p>
           <button class="games__button button" type="button">заполнить заявку</button>
           <div class="games__image">
             <picture>
@@ -143,13 +143,13 @@
                 srcset="img/games-mobile@1x.webp 1x, img/games-mobile@2x.webp 2x" width="290"
                 height="290">
               <source type="image/png" media="(min-width: 1366px)"
-                srcset="img/agames-desktop@1x.png 1x, img/games-desktop@2x.png 2x" width="660"
+                srcset="img/games-desktop@1x.png 1x, img/games-desktop@2x.png 2x" width="660"
                 height="500">
               <source type="image/png" media="(min-width: 768px)"
                 srcset="img/games-tablet@1x.png 1x, img/games-tablet@2x.png 2x" width="378"
                 height="348">
               <img src="img/games-mobile@1x.png" srcset="img/games-mobile@2x.png 2x" width="290"
-                height="290" alt="Пример зала в фитнес центре SUPERGYM.">
+                height="290" alt="Участник соревнования по CrossFit">
             </picture>
           </div>
         </div>
@@ -157,6 +157,53 @@
       <section class="juri" data-test="juri">
         <div class="juri__wrapper">
           <h2 class="juri__title">Жюри</h2>
+          <div class="juri__slider slider">
+            <ul class="slider__wrapper">
+              <li class="slider__slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-1@1x.webp 1x, img/juri-1@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-1@1x.png" srcset="img/juri-1@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+              </li>
+              <li class="slider__slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-2@1x.webp 1x, img/juri-2@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-2@1x.png" srcset="img/juri-2@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+              </li>
+              <li class="slider__slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-3@1x.webp 1x, img/juri-3@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-3@1x.png" srcset="img/juri-3@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+              </li>
+              <li class="slider__slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-4@1x.webp 1x, img/juri-4@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-4@1x.png" srcset="img/juri-4@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+              </li>
+            </ul>
+
+            <button class="slider__button slider__button--prev">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider__button slider__button--next">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
         </div>
       </section>
       <div data-test="features">features</div>
