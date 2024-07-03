@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
@@ -8,24 +8,164 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <header class="header" data-test="hero">
+      <div class="header__wrapper">
+        <div class="header__content-wrapper">
+          <img class="header__logo" src="/__spritemap#sprite-logo" width="100" height="20" alt="Логотип фитнес центра SUPERGYM.">
+          <a class="header__phone" href="tel:8(800)555-55-55">8 800 555-55-55</a>
+        </div>
+        <section class="hero">
+          <p class="hero__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <p class="hero__city">Омск</p>
+          <h1 class="hero__title">Фитнес центр</h1>
+          <button class="hero__button button" type="button">Купить абонемент</button>
+          <div class="hero__image visually-hidden">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/hero-img-desktop@1x.webp 1x, img/hero-img-desktop@2x.webp 2x" width="500"
+                height="524">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/hero-img-tablet@1x.webp 1x, img/hero-img-tablet@2x.webp 2x" width="324"
+                height="390">
+              <source type="image/png" media="(min-width: 1366px)"
+                srcset="img/hero-img-desktop@1x.png 1x, img/hero-img-desktop@2x.png 2x" width="500"
+                height="524">
+              <img src="img/hero-img-tablet@1x.png" srcset="img/hero-img-tablet@2x.png 2x" width="324"
+                height="390" alt="Спортивный мужчина в футболке супергероя.">
+            </picture>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="about" data-test="about">
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <p class="about__description">Просторный зал площадью 900 кв/м</p>
+        <p>
+          Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+          Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+        </p>
+        <div class="about__image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/about-img-desktop@1x.webp 1x, img/about-img-desktop@2x.webp 2x" width="660"
+              height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/about-img-tablet@1x.webp 1x, img/about-img-tablet@2x.webp 2x" width="678"
+              height="345">
+            <source type="image/webp"
+              srcset="img/about-img-mobile@1x.webp 1x, img/about-img-mobile@2x.webp 2x" width="320"
+              height="280">
+            <source type="image/png" media="(min-width: 1366px)"
+              srcset="img/about-img-desktop@1x.png 1x, img/about-img-desktop@2x.png 2x" width="660"
+              height="400">
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="img/about-img-tablet@1x.png 1x, img/about-img-tablet@2x.png 2x" width="678"
+              height="345">
+            <img src="img/about-img-mobile@1x.png" srcset="img/about-img-mobile@2x.png 2x" width="320"
+              height="280" alt="Пример зала в фитнес центре SUPERGYM.">
+          </picture>
+        </div>
+      </section>
+      <section class="price" data-test="price">
+        <div class="price__wrapper">
+          <h2 class="price__title">Абонементы</h2>
+          <ul class="price__filter filter">
+            <li class="filter__item filter__item--active">
+              <button class="filter__button" type="button">1 месяц</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">6 месяцев</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">12 месяцев</button>
+            </li>
+          </ul>
+          <ul class="price__card-list" id="card-list">
+            <li class="price__card card">
+              <h3 class="card__title">С тренером</h3>
+              <p class="card__time">12 занятий</p>
+              <p class="card__price">5000</p>
+              <button class="card__button button" type="button">Купить абонемент</button>
+            </li>
+            <li class="price__card card">
+              <h3 class="card__title">Дневной</h3>
+              <p class="card__time">с 8:00 до 17:00</p>
+              <p class="card__price">1700</p>
+              <button class="card__button button" type="button">Купить абонемент</button>
+            </li>
+            <li class="price__card card">
+              <h3 class="card__title">Полный день</h3>
+              <p class="card__time">с 8:00 до 22:00</p>
+              <p class="card__price">2700</p>
+              <button class="card__button button" type="button">Купить абонемент</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="games" data-test="games">
+        <div class="games__wrapper">
+          <h2 class="visually-hidden">Соревнования по CrossFit</h2>
+          <div class="games__banner banner">
+            <h3 class="banner__title">SUPER GAMES</h3>
+            <div class="banner__time">
+              <div class="banner__time-wrapper">
+                <span class="banner__text">Дата</span>
+                <div class="banner__date-wrapper">
+                  <span class="banner__number">7</span>
+                  <span class="banner__date">Марта 2019</span>
+                </div>
+              </div>
+              <div class="banner__time-wrapper">
+                <span class="banner__text">Время</span>
+                <span class="banner__number">12:00</span>
+              </div>
+            </div>
+          </div>
+          <p class="games__description">Ежегодные соревнования по CrossFit</p>
+          <button class="games__button button" type="button">заполнить заявку</button>
+          <div class="games__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/games-desktop@1x.webp 1x, img/games-desktop@2x.webp 2x" width="660"
+                height="500">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/games-tablet@1x.webp 1x, img/games-tablet@2x.webp 2x" width="378"
+                height="348">
+              <source type="image/webp"
+                srcset="img/games-mobile@1x.webp 1x, img/games-mobile@2x.webp 2x" width="290"
+                height="290">
+              <source type="image/png" media="(min-width: 1366px)"
+                srcset="img/agames-desktop@1x.png 1x, img/games-desktop@2x.png 2x" width="660"
+                height="500">
+              <source type="image/png" media="(min-width: 768px)"
+                srcset="img/games-tablet@1x.png 1x, img/games-tablet@2x.png 2x" width="378"
+                height="348">
+              <img src="img/games-mobile@1x.png" srcset="img/games-mobile@2x.png 2x" width="290"
+                height="290" alt="Пример зала в фитнес центре SUPERGYM.">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="juri" data-test="juri">
+        <div class="juri__wrapper">
+          <h2 class="juri__title">Жюри</h2>
+        </div>
+      </section>
+      <div data-test="features">features</div>
+      <div data-test="offers">offers</div>
+      <div data-test="faq">faq</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="form">form</div>
+    </main>
+    <footer data-test="footer">footer</footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
