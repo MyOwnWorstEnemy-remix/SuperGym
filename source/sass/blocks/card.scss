@@ -1,0 +1,39 @@
+.card {
+  width: 206px;
+  padding: 50px 42px;
+  background-color: $background-color-primary;
+  text-align: center;
+}
+
+.card__button {
+  width: 100%;
+  color: $text-color-primary;
+  border: 2px solid $button-dark;
+
+  &:hover {
+    color: $text-color-secondary;
+    background: linear-gradient(97deg, #ED0233 18%, #003EB7 95%);
+    border: none;
+  }
+
+  &:focus {
+    color: $text-color-secondary;
+    background: linear-gradient(97deg, #ED0233 18%, #003EB7 95%);
+    opacity: 0.8;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.7);
+    opacity: 1;
+    border: none;
+  }
+
+  &:disabled {
+    cursor: auto;
+    color: $text-color-primary;
+    background: $button-light;
+    border: 2px solid $button-dark;
+    opacity: 30%;
+  }
+}

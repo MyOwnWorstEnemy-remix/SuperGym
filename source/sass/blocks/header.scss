@@ -2,3 +2,59 @@
   background: linear-gradient(90deg, #1c3477 0%, #1a3578 40%, #73184b 75%, #b4022a 100%);
   color: $text-color-secondary;
 }
+
+.header__wrapper {
+  width: 290px;
+  padding: 16px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    padding: 30px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    padding: 30px 103px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $tablet-width) {
+    width: 110px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+    height: 26px;
+  }
+}
+
+.header__phone {
+  color: $text-color-secondary;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+
+  &:hover {
+    color: $additional-color;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    color: $additional-color;
+  }
+
+  &:active {
+    color: $text-color-primary;
+    border-bottom: 1px solid $text-color-primary;
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

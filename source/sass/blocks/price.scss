@@ -1,0 +1,28 @@
+.price {
+  background-color: $background-color-secondary;
+}
+
+.price__wrapper {
+  width: 290px;
+  padding: 40px 15px;
+}
+
+.price__title {
+  margin-bottom: 30px;
+}
+
+.price__filter {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.price__card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
