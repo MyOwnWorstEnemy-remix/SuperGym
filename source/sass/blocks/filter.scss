@@ -25,6 +25,12 @@
     height: 2px;
     background-color: $button-tab;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    min-height: 28px;
+  }
 }
 
 .filter__item .filter__button {

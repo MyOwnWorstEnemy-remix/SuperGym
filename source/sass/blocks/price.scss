@@ -5,10 +5,29 @@
 .price__wrapper {
   width: 290px;
   padding: 40px 15px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    padding: 60px 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    padding: 100px 103px;
+  }
 }
 
 .price__title {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .price__filter {
@@ -16,6 +35,17 @@
   margin-bottom: 30px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin-bottom: 40px;
+  }
 }
 
 .price__card-list {
@@ -25,4 +55,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
 }

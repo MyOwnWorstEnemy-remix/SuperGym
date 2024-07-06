@@ -3,6 +3,21 @@
   position: relative;
   width: 320px;
   height: 170px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 270px;
+    left: 50%;
+    margin-left: -135px;
+    bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 230px;
+    margin-left: -180px;
+    bottom: 125px;
+  }
 }
 
 .video__button {
@@ -22,13 +37,13 @@
   &::after {
     position: absolute;
     content: "";
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    height: 15px;
     top: 50%;
     left: 50%;
-    margin-top: -11px;
-    margin-left: -11px;
-    mask-image: url("/__spritemap#sprite-play");
+    margin-top: -7px;
+    margin-left: -6px;
+    mask-image: url("/__spritemap#sprite-play-view");
     mask-repeat: no-repeat;
     background-color: $button-light;
   }
@@ -46,6 +61,27 @@
     border-radius: 50%;
     background-color: transparent;
     opacity: 0.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    height: 72px;
+    margin-top: -36px;
+    margin-left: -36px;
+
+    &::after {
+      width: 22px;
+      height: 22px;
+      margin-top: -11px;
+      margin-left: -9px;
+    }
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      margin-top: -50px;
+      margin-left: -50px;
+    }
   }
 
   &:hover {
@@ -78,6 +114,17 @@
 
   &:active {
     background: $button-light;
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+    margin-left: -21px;
+
+    @media (min-width: $desktop-width) {
+      width: 58px;
+      height: 58px;
+      margin-top: -29px;
+      margin-left: -29px;
+    }
   }
 
   &:disabled {
