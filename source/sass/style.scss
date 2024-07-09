@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper.css";
 
 // Global
 // ---------------------------------
@@ -27,3 +28,5 @@
 @import "./blocks/card";
 @import "./blocks/games";
 @import "./blocks/banner";
+@import "./blocks/juri";
+@import "./blocks/slider-juri";

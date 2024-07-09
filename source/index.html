@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="preload" href="fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
@@ -193,11 +198,11 @@
         </div>
       </section>
       <section class="juri" data-test="juri">
-        <div class="juri__wrapper">
-          <h2 class="juri__title title">Жюри</h2>
-          <div class="juri__slider slider-juri">
-            <ul class="slider-juri__wrapper">
-              <li class="slider-juri__slide">
+        <h2 class="juri__title title">Жюри</h2>
+        <div class="juri__slider-wrapper">
+          <div class="juri__slider slider-juri swiper-container">
+            <ul class="slider-juri__wrapper swiper-wrapper">
+              <li class="slider-juri__slide swiper-slide">
                 <picture>
                   <source type="image/webp"
                     srcset="img/juri-1@1x.webp 1x, img/juri-1@2x.webp 2x" width="260"
@@ -205,8 +210,18 @@
                   <img src="img/juri-1@1x.png" srcset="img/juri-1@2x.png 2x" width="260"
                     height="300" alt="Фотография члена жюри.">
                 </picture>
+                <h3 class="slider-juri__name">Анна Павлова</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Анна Павлова</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="slider-juri__slide">
+              <li class="slider-juri__slide swiper-slide">
                 <picture>
                   <source type="image/webp"
                     srcset="img/juri-2@1x.webp 1x, img/juri-2@2x.webp 2x" width="260"
@@ -214,8 +229,18 @@
                   <img src="img/juri-2@1x.png" srcset="img/juri-2@2x.png 2x" width="260"
                     height="300" alt="Фотография члена жюри.">
                 </picture>
+                <h3 class="slider-juri__name">Алексей Лавров</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Алексей Лавров</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="slider-juri__slide">
+              <li class="slider-juri__slide swiper-slide">
                 <picture>
                   <source type="image/webp"
                     srcset="img/juri-3@1x.webp 1x, img/juri-3@2x.webp 2x" width="260"
@@ -223,8 +248,18 @@
                   <img src="img/juri-3@1x.png" srcset="img/juri-3@2x.png 2x" width="260"
                     height="300" alt="Фотография члена жюри.">
                 </picture>
+                <h3 class="slider-juri__name">Александр Пашков</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Александр Пашков</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="slider-juri__slide">
+              <li class="slider-juri__slide swiper-slide">
                 <picture>
                   <source type="image/webp"
                     srcset="img/juri-4@1x.webp 1x, img/juri-4@2x.webp 2x" width="260"
@@ -232,16 +267,101 @@
                   <img src="img/juri-4@1x.png" srcset="img/juri-4@2x.png 2x" width="260"
                     height="300" alt="Фотография члена жюри.">
                 </picture>
+                <h3 class="slider-juri__name">Мария Кетова</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Мария Кетова</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider-juri__slide swiper-slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-1@1x.webp 1x, img/juri-1@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-1@1x.png" srcset="img/juri-1@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+                <h3 class="slider-juri__name">Валентина Морозова</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Валентина Морозова</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider-juri__slide swiper-slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-2@1x.webp 1x, img/juri-2@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-2@1x.png" srcset="img/juri-2@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+                <h3 class="slider-juri__name">Матвей Корнилов</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Матвей Корнилов</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider-juri__slide swiper-slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-3@1x.webp 1x, img/juri-3@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-3@1x.png" srcset="img/juri-3@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+                <h3 class="slider-juri__name">Андрей Пашков</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Андрей Пашков</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider-juri__slide swiper-slide">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/juri-4@1x.webp 1x, img/juri-4@2x.webp 2x" width="260"
+                    height="300">
+                  <img src="img/juri-4@1x.png" srcset="img/juri-4@2x.png 2x" width="260"
+                    height="300" alt="Фотография члена жюри.">
+                </picture>
+                <h3 class="slider-juri__name">Ирина Орехова</h3>
+                <div class="slider-juri__overlay">
+                  <p class="slider-juri__overlay-name">Ирина Орехова</p>
+                  <p class="slider-juri__label">CrossFit</p>
+                  <ul class="slider-juri__list">
+                    <li class="slider-juri__item">Certified Level 3 Trainer</li>
+                    <li class="slider-juri__item">Победитель чемпионата России по CrossFit</li>
+                    <li class="slider-juri__item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
             </ul>
-
-            <button class="slider-juri__button slider-button slider-button--prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="slider-juri__button slider-button slider-button--next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
           </div>
+          <button class="juri__button juri__button--prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="juri__button juri__button--next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
         </div>
       </section>
       <section class="features" data-test="features">
