@@ -425,14 +425,17 @@
         </div>
       </section>
       <section class="offers" data-test="offers">
-        <div class="offers__wrapper">
-          <h2 class="offers__title title">Акции</h2>
-          <div class="offers__banner">
-            <div class="offers__content">
-              <span>Год <b>4999</b></span>
-              <p>Безлимитный абонемент в тренажёрный зал</p>
-              <a class="offers__link offers__link--banner" href="#">подробнее</a>
+        <h2 class="offers__title title">Акции</h2>
+        <div class="offers__banner">
+          <div class="offers__content">
+            <div>
+              <p>Год</p>
+              <span>4999</span>
             </div>
+            <h3>Безлимитный абонемент в тренажёрный зал</h3>
+            <a class="offers__link link link--light" href="#">подробнее</a>
+          </div>
+          <div class="offers__picture">
             <picture>
               <source type="image/webp" media="(min-width: 1366px)"
                 srcset="img/offers-desktop@1x.webp 1x, img/offers-desktop@2x.webp 2x" width="280"
@@ -450,22 +453,26 @@
                 srcset="img/offers-tablet@1x.png 1x, img/offers-tablet@2x.png 2x" width="400"
                 height="462">
               <img src="img/offers-mobile@1x.png" srcset="img/offers-mobile@2x.png 2x" width="320"
-                height="360" alt="Участник соревнования по CrossFit">
+                height="360" alt="Девушка в спортивном костюме.">
             </picture>
           </div>
-          <ul class="offers__list">
-            <li class="offers__item">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="offers__link" href="#">подробнее</a>
-            </li>
-            <li class="offers__item">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a class="offers__link" href="#">подробнее</a>
-            </li>
-          </ul>
         </div>
+        <ul class="offers__list">
+          <li class="offers__item">
+            <h3>Месяц бесплатно</h3>
+            <div>
+              <p>Приведи друга, получи абонемент<br> в подарок</p>
+            </div>
+            <a class="offers__link link" href="#">подробнее</a>
+          </li>
+          <li class="offers__item">
+            <h3>Скидка 20%</h3>
+            <div>
+              <p>Корпоративный фитнес с командой</p>
+            </div>
+            <a class="offers__link link" href="#">подробнее</a>
+          </li>
+        </ul>
       </section>
       <section class="faq" data-test="faq">
         <div class="faq__wrapper">
