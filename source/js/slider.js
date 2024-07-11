@@ -1,8 +1,8 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
-const slider = new Swiper('.slider-juri', {
-  modules: [Navigation, Pagination],
+const sliderJuri = new Swiper('.slider-juri', {
+  modules: [Navigation],
   loop: true,
   navigation: {
       nextEl: '.juri__button--next',
@@ -23,4 +23,15 @@ const slider = new Swiper('.slider-juri', {
         spaceBetween: 40,
     },
 },
+});
+
+const sliderReviews = new Swiper('.slider-reviews', {
+  modules: [Navigation],
+  loop: false,
+  navigation: {
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
+  },
+  slidesPerView: 1,
+  spaceBetween: 40,
 });

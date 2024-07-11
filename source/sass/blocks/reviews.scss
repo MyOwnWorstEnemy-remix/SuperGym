@@ -1,32 +1,40 @@
-.juri {
-  width: 260px;
-  padding: 40px 30px;
+.reviews {
+  width: 240px;
+  padding: 40px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 678px;
-    padding: 30px 45px 60px;
+    padding: 60px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1270px;
-    padding: 100px 48px;
+    width: 1160px;
+    padding: 100px 103px;
   }
 }
 
-.juri__title {
-  margin-bottom: 20px;
+.reviews__title {
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 35px;
   }
 }
 
-.juri__slider-wrapper {
+.reviews__slider-wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
 }
 
-.juri__button {
+.reviews__button {
   width: 48px;
   height: 48px;
   padding: 0;
