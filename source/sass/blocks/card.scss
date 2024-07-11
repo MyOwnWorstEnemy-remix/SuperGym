@@ -64,9 +64,10 @@
   line-height: 72px;
   font-weight: 700;
   color: $text-color-highlight;
-  margin: 0;
+  width: fit-content;
+  margin: 0 auto;
   margin-bottom: 18px;
-  margin-right: 34px;
+  padding-right: 34px;
   position: relative;
   z-index: 0;
 
@@ -85,23 +86,18 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 90px;
-    margin-right: 44px;
+    padding-right: 44px;
     margin-bottom: 22px;
 
     &::after {
       width: 30px;
       height: 42px;
       margin-top: -21px;
-      right: -5px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 17px;
-
-    &::after {
-      right: -14px;
-    }
   }
 
   span {
@@ -111,16 +107,13 @@
     opacity: 0.48;
     position: absolute;
     bottom: 0;
-    left: 15px;
+    left: -15px;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
       font-size: 100px;
       line-height: 150px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 5px;
+      left: -20px;
     }
   }
 }

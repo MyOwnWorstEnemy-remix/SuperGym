@@ -22,13 +22,13 @@ const hideTabContent = (tabIndex) => {
   for (let i = tabIndex; i < tabContent.length; i++) {
     tabContent[i].classList.add('visually-hidden');
   }
-}
+};
 
 const showTabContent = (tabIndex) => {
   if (tabContent[tabIndex].classList.contains('visually-hidden')) {
     tabContent[tabIndex].classList.remove('visually-hidden');
   }
-}
+};
 
 const onTabClick = (evt) => {
   evt.preventDefault();
@@ -45,6 +45,6 @@ const onTabClick = (evt) => {
       }
     }
   }
-}
+};
 
 tabList.addEventListener("click", onTabClick);
