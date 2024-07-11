@@ -1,0 +1,276 @@
+.faq {
+  background-color: $background-color-secondary;
+}
+
+.faq__wrapper {
+  width: 290px;
+  padding: 70px 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    padding: 60px 45px;
+    gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    padding: 100px 103px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 50px;
+    column-gap: 40px;
+  }
+}
+
+.faq__title {
+  width: 100%;
+}
+
+.faq__tabs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+}
+
+.faq__tab {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color-primary;
+  background-color: inherit;
+  width: 140px;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  min-height: 46px;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    width: 162px;
+    min-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+
+  &:hover {
+    border: 1px solid $button-dark;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $background-color-primary;
+    border: 1px solid $button-dark;
+  }
+
+  &:active {
+    background: $button-gradient;
+    border: none;
+    color: $text-color-secondary;
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+    border: 1px solid rgba(16, 38, 84, 0.2);
+    background: inherit;
+    cursor: auto;
+  }
+
+  &--active {
+    background: $button-gradient;
+    border: none;
+    color: $text-color-secondary;
+
+    &:hover,
+    &:focus {
+      cursor: auto;
+      border: none;
+    }
+  }
+}
+
+.faq__questions-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 860px;
+  }
+}
+
+.faq__question {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid #74819c;
+
+  &:last-child {
+    border-bottom: 1px solid #74819c;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 23px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 238px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 22px;
+      width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      line-height: 24px;
+      width: 660px;
+    }
+  }
+
+  p {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &--active {
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 300;
+      width: 238px;
+      height: auto;
+      position: relative;
+      margin: 0;
+
+      @media (min-width: $tablet-width) {
+        font-size: 18px;
+        line-height: 24px;
+        width: 559px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 660px;
+      }
+    }
+  }
+}
+
+.faq__button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid $additional-color;
+  background-color: inherit;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 7px;
+    left: 7px;
+    mask-image: url("/__spritemap#sprite-plus-view");
+    mask-repeat: no-repeat;
+    background-color: $additional-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  &:hover {
+    background-color: $additional-color;
+
+    &::after {
+      background-color: $background-color-primary;
+    }
+  }
+
+  &:focus {
+    background-color: #74819c;
+
+    &::after {
+      background-color: $background-color-primary;
+    }
+  }
+
+  &:active {
+    border: 1px solid $button-dark;
+    background-color: $button-dark;
+  }
+
+  &:disabled {
+    border: 1px solid $additional-color;
+    background-color: inherit;
+    opacity: 0.3;
+    cursor: auto;
+
+    &::after {
+      background-color: $additional-color;
+    }
+  }
+
+  &--active {
+    background-color: $additional-color;
+
+    &::after {
+      mask-image: url("/__spritemap#sprite-minus-view");
+      background-color: $background-color-primary;
+    }
+  }
+}

@@ -6,3 +6,4 @@
 import "./video.js";
 import "./scroll.js";
 import "./slider.js";
+import "./faq.js";

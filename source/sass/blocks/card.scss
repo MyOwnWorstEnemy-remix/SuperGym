@@ -17,7 +17,7 @@
   &:has(.card__button:hover, .card__button:focus) {
     border-width: 7px;
     border-style: solid;
-    border-image: $button-gradient 1 1;
+    border-image: $card-gradient 1 1;
   }
 }
 
