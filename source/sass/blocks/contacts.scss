@@ -1,0 +1,136 @@
+.contacts {
+  width: 290px;
+  padding: 40px 15px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    padding: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+    padding: 60px 103px;
+    margin: 0;
+    margin-right: auto;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 42px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__list-wrapper {
+  width: 290px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: $border-color;
+    top: 0;
+    left: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    column-gap: 60px;
+
+    &::after {
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+    column-gap: 120px;
+  }
+}
+
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 178px;
+  }
+}
+
+.contacts__item-title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+}
+
+.contacts__item-text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+
+  &--link {
+    color: $text-color-primary;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $background-color-dark;
+      bottom: -4px;
+      left: 0;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+      color: $additional-color;
+      opacity: 1;
+    }
+
+    &:active {
+      &::after {
+        content: "";
+
+      }
+    }
+  }
+}

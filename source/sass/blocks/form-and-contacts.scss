@@ -1,0 +1,21 @@
+.form-and-contacts {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, $background-color-dark 50%, $background-color-primary 50%);
+    border: none;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-image: linear-gradient(to right, $background-color-dark 50%, $border-color 50%) 1 1;
+  }
+}
+
+.form-and-contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.form-and-contacts__form {
+  background-color: $background-color-dark;
+}
