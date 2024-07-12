@@ -8,3 +8,4 @@ import "./scroll.js";
 import "./price.js";
 import "./slider.js";
 import "./faq.js";
+import "./form.js";

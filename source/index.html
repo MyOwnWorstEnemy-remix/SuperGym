@@ -759,11 +759,15 @@
               <h2 class="form__title title">Бесплатное занятие</h2>
               <label class="form__input-label">
                 <span class="visually-hidden">Имя:</span>
-                <input class="form__text-input" type="text" name="name" placeholder="Имя" id="name" required>
+                <input class="form__text-input" type="text" name="name" placeholder="Имя" id="name" required pattern="[а-яёА-ЯЁ ]+"
+                  title="Имя пользователя должно содержать только буквы и пробелы">
+                <p class="form__error visually-hidden">Некорректное имя пользователя</p>
               </label>
               <label class="form__input-label">
                 <span class="visually-hidden">Телефон:</span>
-                <input class="form__text-input" type="text" name="phone" placeholder="Телефон" id="phone" required>
+                <input class="form__text-input" type="tel" name="phone" placeholder="Телефон" id="phone" required  pattern="[^\p{L}]+"
+                  title="Телефон не может содрежать буквы">
+                <p class="form__error visually-hidden">Некорректный номер телефона</p>
               </label>
               <button class="form__button button" type="submit">Отправить</button>
             </form>
