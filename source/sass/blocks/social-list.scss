@@ -79,3 +79,7 @@
     mask-image: url("/__spritemap#sprite-reddit-view");
   }
 }
+
+.social-list__link[aria-disabled="true"] {
+  opacity: 0.3;
+}

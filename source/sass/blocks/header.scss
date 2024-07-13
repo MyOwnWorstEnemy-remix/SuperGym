@@ -49,6 +49,7 @@
   }
 
   &:focus {
+    outline: none;
     color: $additional-color;
   }
 
@@ -57,8 +58,8 @@
     border-bottom: 1px solid $text-color-primary;
     opacity: 1;
   }
+}
 
-  &:disabled {
-    opacity: 0.5;
-  }
+.header__phone[aria-disabled="true"] {
+  color: #f8f9fc;
 }

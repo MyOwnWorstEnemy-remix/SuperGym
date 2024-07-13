@@ -64,3 +64,11 @@
     }
   }
 }
+
+.link[aria-disabled="true"] {
+  opacity: 0.3;
+}
+
+.link--light[aria-disabled="true"] {
+  opacity: 0.5;
+}

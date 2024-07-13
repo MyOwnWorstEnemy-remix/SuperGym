@@ -64,3 +64,7 @@
     }
   }
 }
+
+.nav-list__link[aria-disabled="true"] {
+  opacity: 0.4;
+}
