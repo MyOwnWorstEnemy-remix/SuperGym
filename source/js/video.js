@@ -1,5 +1,5 @@
 const videoContainer = document.querySelector('.video');
-const videoCurtain =  document.querySelector('.video__curtain');
+const videoCurtain = document.querySelector('.video__curtain');
 const videoPlayButton = document.querySelector('.video__button');
 
 const loadVideo = () => {

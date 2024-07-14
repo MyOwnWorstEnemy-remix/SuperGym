@@ -49,18 +49,18 @@
       bottom: -5px;
     }
   }
+}
 
-  &--light {
-    color: $text-color-secondary;
+.link--light {
+  color: $text-color-secondary;
 
+  &::after {
+    background-color: $background-color-primary;
+  }
+
+  &:focus {
     &::after {
-      background-color: $background-color-primary;
-    }
-
-    &:focus {
-      &::after {
-        border: 1px solid $background-color-primary;
-      }
+      border: 1px solid $background-color-primary;
     }
   }
 }

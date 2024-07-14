@@ -37,7 +37,6 @@
 
 .form__input-label {
   width: 100%;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 205px;
@@ -46,6 +45,10 @@
   @media (min-width: $desktop-width) {
     width: 223px;
   }
+}
+
+.form__input {
+  position: relative;
 }
 
 .form__error {

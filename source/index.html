@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт фитнес-центра SUPERGYM, который расположен в городе Омск.">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss">
     <link rel="preload" href="fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -764,18 +765,22 @@
           <section class="form-and-contacts__form">
             <form class="form" action="https://echo.htmlacademy.ru/" method="post">
               <h2 class="form__title title">Бесплатное занятие</h2>
-              <label class="form__input-label">
-                <span class="visually-hidden">Имя:</span>
-                <input class="form__text-input" type="text" name="name" placeholder="Имя" id="name" required pattern="[а-яёА-ЯЁ ]+"
-                  title="Имя пользователя должно содержать только буквы и пробелы">
-                <p class="form__error visually-hidden">Некорректное имя пользователя</p>
-              </label>
-              <label class="form__input-label">
-                <span class="visually-hidden">Телефон:</span>
-                <input class="form__text-input" type="tel" name="phone" placeholder="Телефон" id="phone" required  pattern="[^\p{L}]+"
-                  title="Телефон не может содрежать буквы">
-                <p class="form__error visually-hidden">Некорректный номер телефона</p>
-              </label>
+              <div class="form__input">
+                <label class="form__input-label">
+                  <span class="visually-hidden">Имя:</span>
+                  <input class="form__text-input" type="text" name="name" placeholder="Имя" id="name" required pattern="[а-яёА-ЯЁ ]+"
+                    title="Имя пользователя должно содержать только буквы и пробелы">
+                </label>
+                <p class="form__error visually-hidden">Некорректное имя</p>
+              </div>
+              <div class="form__input">
+                <label class="form__input-label">
+                  <span class="visually-hidden">Телефон:</span>
+                  <input class="form__text-input" type="tel" name="phone" placeholder="Телефон" id="phone" required  pattern="[^\p{L}]+"
+                    title="Телефон не может содрежать буквы">
+                </label>
+                <p class="form__error visually-hidden">Некорректный телефон</p>
+              </div>
               <button class="form__button button" type="submit">Отправить</button>
             </form>
           </section>

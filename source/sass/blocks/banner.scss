@@ -96,6 +96,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 4px;
+
     &::after {
       width: 100px;
     }
@@ -103,6 +104,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 12px;
+
     &::after {
       width: 95px;
       bottom: -6px;

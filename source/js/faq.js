@@ -4,13 +4,13 @@ const faqButtonList = document.querySelectorAll('.faq__button');
 const onButtonClick = (evt) => {
   evt.preventDefault();
   const button = evt.target;
-  const question = evt.target.closest(".faq__question");
-  button.classList.toggle("faq__button--active");
-  question.classList.toggle("faq__question--active");
-}
+  const question = evt.target.closest('.faq__question');
+  button.classList.toggle('faq__button--active');
+  question.classList.toggle('faq__question--active');
+};
 
 faqButtonList.forEach((faqButton) => {
-  faqButton.addEventListener("click", onButtonClick);
+  faqButton.addEventListener('click', onButtonClick);
 });
 
 // Работа табов
@@ -38,7 +38,7 @@ const onTabClick = (evt) => {
     activeTab.classList.remove('faq__tab--active');
     tab.classList.add('faq__tab--active');
     for(let i = 0; i < tabs.length; i++) {
-      if (tab == tabs[i]) {
+      if (tab === tabs[i]) {
         hideTabContent(0);
         showTabContent(i);
         break;
@@ -47,4 +47,4 @@ const onTabClick = (evt) => {
   }
 };
 
-tabList.addEventListener("click", onTabClick);
+tabList.addEventListener('click', onTabClick);

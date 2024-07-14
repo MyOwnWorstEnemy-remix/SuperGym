@@ -1,4 +1,4 @@
-// делает ссылку неактивной
+// делает ссылку недоступной
 function disableLink(link) {
   link.classList.add('disabled');
   link.setAttribute('data-href', link.href);
@@ -16,8 +16,8 @@ function enableLink(link) {
   link.removeAttribute('tabindex');
 }
 
-document.body.addEventListener('click', function (event) {
-  if (event.target.nodeName == 'A' && event.target.getAttribute('aria-disabled') == 'true') {
+document.body.addEventListener('click', (event) => {
+  if (event.target.nodeName === 'A' && event.target.getAttribute('aria-disabled') === 'true') {
     event.preventDefault();
   }
 });
@@ -26,6 +26,9 @@ const links = document.querySelectorAll('a');
 
 links.forEach((link) => {
   if (link.classList.contains('disabled')) {
+    // несколько инструкций ради того чтобы проверить работу включения/выключения доступности ссылки
+    disableLink(link);
+    enableLink(link);
     disableLink(link);
   }
 });

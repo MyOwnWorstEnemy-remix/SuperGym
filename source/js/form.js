@@ -5,7 +5,7 @@ const submitButton = form.querySelector('.form__button');
 
 const checkInput = (rules, input) => {
   const checkedInput = input.value.match(rules);
-  const nameErrorText = input.parentElement.querySelector('.form__error');
+  const nameErrorText = input.parentElement.nextElementSibling;
   if (!checkedInput || checkedInput[0] !== input.value) {
     input.classList.add('form__text-input--error');
     nameErrorText.classList.remove('visually-hidden');
@@ -20,7 +20,7 @@ const checkInput = (rules, input) => {
 const onClickCheck = (evt) => {
   evt.preventDefault();
   // const nameRules =  /[\p{L} ]+/;
-  const nameRules =  /[а-яёА-ЯЁ ]+/;
+  const nameRules = /[а-яёА-ЯЁ ]+/;
   const phoneRules = /[^\p{L}]+/gu;
   const nameCheckResult = checkInput(nameRules, nameInput);
   const phoneCheckResult = checkInput(phoneRules, phoneInput);

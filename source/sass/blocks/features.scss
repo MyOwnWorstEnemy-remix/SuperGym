@@ -103,7 +103,6 @@
     font-weight: 700;
     background: $text-color-gradient;
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @media (min-width: $tablet-width) {
@@ -112,7 +111,7 @@
     }
   }
 
-  h3{
+  h3 {
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
