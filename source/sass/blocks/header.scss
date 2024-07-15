@@ -8,11 +8,13 @@
   padding: 16px 15px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  gap: 41px;
+  min-height: 22px;
 
   @media (min-width: $tablet-width) {
     width: 678px;
     padding: 30px 45px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +44,18 @@
   font-size: 22px;
   line-height: 22px;
   text-decoration: none;
+  margin-top: -2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
 
   &:hover {
     color: $additional-color;

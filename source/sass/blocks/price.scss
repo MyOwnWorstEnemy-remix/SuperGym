@@ -44,11 +44,11 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 }
 
@@ -76,9 +76,13 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 36px;
 
   @media (min-width: $tablet-width) {
-    gap: 40px;
+    gap: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 41px;
   }
 }

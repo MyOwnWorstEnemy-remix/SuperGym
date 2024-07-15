@@ -1,17 +1,17 @@
 .card {
-  width: 192px;
-  padding: 50px 42px;
+  width: 206px;
+  padding: 43px 35px;
   background-color: $background-color-primary;
   text-align: center;
   border: 7px solid $background-color-primary;
 
   @media (min-width: $tablet-width) {
-    width: 236px;
-    padding: 65px;
+    width: 250px;
+    padding: 59px 58px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 216px;
+    width: 230px;
   }
 
   &:has(.card__button:hover, .card__button:focus) {
@@ -55,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 77px;
+    margin-bottom: 78px;
   }
 }
 
@@ -120,6 +120,7 @@
 
 .card__button {
   width: 100%;
+  min-height: 66px;
   color: $text-color-primary;
   border: 2px solid $button-dark;
 

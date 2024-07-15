@@ -29,7 +29,10 @@
 
 .faq__title {
   width: 100%;
-  text-align: left;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .faq__tabs {
@@ -124,27 +127,35 @@
   padding: 20px 0;
   border-top: 1px solid $border-color;
 
+  &:first-child {
+    padding-bottom: 21px;
+  }
+
   &:last-child {
+    padding-top: 21px;
     border-bottom: 1px solid $border-color;
   }
 
   @media (min-width: $tablet-width) {
+    padding: 24px 0 23px;
+
+    &:first-child {
+      padding-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 23px 0;
+
+    &:first-child {
+      padding-bottom: 22px;
+    }
   }
 
   div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 10px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 23px;
-    }
   }
 
   h3 {
@@ -188,22 +199,25 @@
     height: auto;
     position: relative;
     margin: 0;
+    margin-top: 20px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
       line-height: 24px;
       width: 559px;
+      margin-top: 10px;
     }
 
     @media (min-width: $desktop-width) {
       width: 660px;
+      margin-top: 23px;
     }
   }
 }
 
 .faq__button {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid $additional-color;
   background-color: inherit;
@@ -213,10 +227,12 @@
   &::after {
     position: absolute;
     content: "";
-    width: 14px;
-    height: 14px;
-    top: 7px;
-    left: 7px;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
     mask-image: url("/__spritemap#sprite-plus-view");
     mask-repeat: no-repeat;
     background-color: $additional-color;
@@ -229,8 +245,8 @@
     &::after {
       width: 20px;
       height: 20px;
-      top: 10px;
-      left: 10px;
+      margin-top: -10px;
+      margin-left: -10px;
     }
   }
 

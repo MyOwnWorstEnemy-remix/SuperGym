@@ -33,5 +33,5 @@ new Swiper('.slider-reviews', {
     prevEl: '.reviews__button--prev',
   },
   slidesPerView: 1,
-  spaceBetween: 40,
+  spaceBetween: 80,
 });
