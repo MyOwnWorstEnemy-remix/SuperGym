@@ -8,7 +8,8 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 105px;
+    width: 100%;
+    max-width: 105px;
     gap: 15px;
   }
 
@@ -35,12 +36,10 @@
   &::after {
     position: absolute;
     content: "";
-    width: 14px;
-    height: 16px;
-    top: 50%;
-    left: 50%;
-    margin-top: -8px;
-    margin-left: -7px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $background-color-footer;
@@ -69,14 +68,17 @@
 
   &--vkontakte::after {
     mask-image: url("/__spritemap#sprite-vk-view");
+    mask-size: 12px 13px;
   }
 
   &--ok::after {
     mask-image: url("/__spritemap#sprite-ok-view");
+    mask-size: 15px 19px;
   }
 
   &--reddit::after {
     mask-image: url("/__spritemap#sprite-reddit-view");
+    mask-size: 15px 15px;
   }
 }
 
