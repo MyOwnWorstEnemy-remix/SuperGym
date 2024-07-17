@@ -59,7 +59,7 @@
 
   @media (min-width: $desktop-width) {
     width: 477px;
-    column-gap: 120px;
+    column-gap: 121px;
   }
 }
 
@@ -93,6 +93,10 @@
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
   }
 }
 
