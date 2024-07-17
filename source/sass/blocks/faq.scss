@@ -4,7 +4,7 @@
 
 .faq__wrapper {
   width: 290px;
-  padding: 70px 15px;
+  padding: 71px 15px 70px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     width: 678px;
     padding: 60px 45px;
-    gap: 45px;
+    gap: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,13 +22,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    row-gap: 50px;
+    row-gap: 51px;
     column-gap: 40px;
   }
 }
 
 .faq__title {
   width: 100%;
+  margin-bottom: -1px;
 
   @media (min-width: $desktop-width) {
     text-align: left;
@@ -68,11 +69,13 @@
     font-size: 18px;
     line-height: 18px;
     width: 162px;
-    min-height: 54px;
+    min-height: 53px;
   }
 
   @media (min-width: $desktop-width) {
     width: 260px;
+    padding-top: 19px;
+    min-height: 54px;
   }
 
   &:hover {
@@ -128,6 +131,7 @@
   border-top: 1px solid $border-color;
 
   &:first-child {
+    padding-top: 21px;
     padding-bottom: 21px;
   }
 
@@ -137,18 +141,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0 23px;
+    padding: 23px 0 24px;
 
     &:first-child {
+      padding-top: 23px;
       padding-bottom: 23px;
+    }
+
+    &:last-child {
+      padding-top: 22px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 0;
+    padding: 23px 0 22px;
 
     &:first-child {
       padding-bottom: 22px;
+    }
+
+    &:last-child {
+      padding-top: 23px;
     }
   }
 
@@ -199,7 +212,7 @@
     height: auto;
     position: relative;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 19px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
