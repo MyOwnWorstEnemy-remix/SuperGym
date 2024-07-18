@@ -126,28 +126,28 @@
 
   &:hover {
     color: $text-color-secondary;
-    background: linear-gradient(97deg, #ed0233 18%, #003eb7 95%);
+    background: $button-gradient;
     border: none;
   }
 
   &:focus {
     color: $text-color-secondary;
-    background: linear-gradient(97deg, #ed0233 18%, #003eb7 95%);
-    opacity: 0.8;
+    background: linear-gradient(97deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
     border: 2px solid #000000;
   }
 
   &:active {
     color: rgba(256, 256, 256, 0.7);
-    opacity: 1;
+    background: $button-gradient;
     border: none;
   }
+}
 
-  &:disabled {
-    cursor: auto;
-    color: $text-color-primary;
-    background: $button-light;
-    border: 2px solid $button-dark;
-    opacity: 30%;
-  }
+.card__button[aria-disabled="true"] {
+  cursor: auto;
+  color: $text-color-primary;
+  letter-spacing: 0.05em;
+  background: $button-light;
+  border: 2px solid $button-dark;
+  opacity: 0.3;
 }

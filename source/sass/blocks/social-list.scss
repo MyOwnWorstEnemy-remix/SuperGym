@@ -55,7 +55,7 @@
 
   &:focus {
     outline: none;
-    background-color: $additional-color;
+    background-color: #103aae;
 
     &::after {
       background-color: $background-color-primary;
@@ -83,5 +83,10 @@
 }
 
 .social-list__link[aria-disabled="true"] {
+  background-color: $background-color-primary;
   opacity: 0.3;
+
+  &::after {
+    background-color: $background-color-footer;
+  }
 }

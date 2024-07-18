@@ -86,22 +86,22 @@
   font-size: 62px;
   line-height: 62px;
   font-weight: 800;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.01em;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
     font-size: 72px;
     line-height: 85px;
-    letter-spacing: 0.025em;
-    margin-right: -1px;
+    letter-spacing: 0.02em;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     margin-bottom: 40px;
     font-size: 92px;
     line-height: 110px;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.04em;
   }
 }
 
