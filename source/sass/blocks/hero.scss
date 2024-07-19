@@ -50,7 +50,7 @@
   margin-top: auto;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 74px;
     line-height: 22px;
   }
 
@@ -86,14 +86,15 @@
   font-size: 62px;
   line-height: 62px;
   font-weight: 800;
-  letter-spacing: 0.01em;
+  letter-spacing: 1px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
     font-size: 72px;
     line-height: 85px;
-    letter-spacing: 0.02em;
+    letter-spacing: 2px;
+    margin-right: -1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +102,7 @@
     margin-bottom: 40px;
     font-size: 92px;
     line-height: 110px;
-    letter-spacing: 0.04em;
+    letter-spacing: 4px;
   }
 }
 

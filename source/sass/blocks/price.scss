@@ -26,7 +26,7 @@
 
 .price__wrapper {
   width: 290px;
-  padding: 40px 15px;
+  padding: 41px 15px 40px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -76,13 +76,13 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 36px;
+  gap: 35px;
 
   @media (min-width: $tablet-width) {
-    gap: 39px;
+    gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 41px;
+    gap: 40px;
   }
 }
