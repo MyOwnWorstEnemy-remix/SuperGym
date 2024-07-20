@@ -1,12 +1,16 @@
 .slider-juri {
   width: 260px;
+  padding: 35px;
   height: 300px;
   overflow: hidden;
   margin: 0 auto;
+  margin-top: -35px;
+  margin-left: -35px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     width: 560px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,14 +54,6 @@
   height: 100%;
   padding: 46px 30px;
   box-sizing: border-box;
-}
-
-.slider-juri__slide:hover .slider-juri__overlay {
-  display: block;
-}
-
-.slider-juri__slide:hover .slider-juri__name {
-  display: none;
 }
 
 .slider-juri__overlay-name {

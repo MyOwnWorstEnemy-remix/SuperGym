@@ -12,7 +12,7 @@ new Swiper('.slider-juri', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 35,
     },
     768: {
       slidesPerView: 2,
@@ -21,6 +21,7 @@ new Swiper('.slider-juri', {
     1366: {
       slidesPerView: 4,
       spaceBetween: 40,
+      simulateTouch: false,
     },
   },
 });
@@ -34,4 +35,10 @@ new Swiper('.slider-reviews', {
   },
   slidesPerView: 1,
   spaceBetween: 80,
+
+  breakpoints: {
+    768: {
+      simulateTouch: false,
+    },
+  },
 });

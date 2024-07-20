@@ -21,12 +21,20 @@ const tabContent = document.querySelectorAll('.faq__questions-list');
 const hideTabContent = (tabIndex) => {
   for (let i = tabIndex; i < tabContent.length; i++) {
     tabContent[i].classList.add('visually-hidden');
+    const questions = tabContent[i].querySelectorAll('.faq__button');
+    questions.forEach((question) => {
+      question.setAttribute('tabindex', '-1');
+    });
   }
 };
 
 const showTabContent = (tabIndex) => {
   if (tabContent[tabIndex].classList.contains('visually-hidden')) {
     tabContent[tabIndex].classList.remove('visually-hidden');
+    const questions = tabContent[tabIndex].querySelectorAll('.faq__button');
+    questions.forEach((question) => {
+      question.setAttribute('tabindex', '0');
+    });
   }
 };
 

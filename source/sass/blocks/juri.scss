@@ -1,7 +1,8 @@
 .juri {
   width: 260px;
-  padding: 40px 30px;
+  padding: 41px 30px 40px;
   margin: 0 auto;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 678px;
@@ -15,7 +16,7 @@
 }
 
 .juri__title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 54px;
