@@ -26,11 +26,11 @@ slides.forEach((slide) => {
     hideSliderOverlay(slide);
   });
 
-  slide.addEventListener("mouseover", () => {
+  slide.addEventListener('mouseover', () => {
     showSlideOverlay(slide);
   });
 
-  slide.addEventListener("mouseout", () => {
+  slide.addEventListener('mouseout', () => {
     hideSliderOverlay(slide);
   });
 });

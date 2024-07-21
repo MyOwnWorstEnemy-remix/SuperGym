@@ -18,6 +18,7 @@
   @media (min-width: $desktop-width) {
     width: 600px;
     justify-content: space-between;
+
     // подозреваю, что как только пройдет проверку блок form desktop, то и footer будет отображаться по другому, но пока нужен отступ чтобы уменьшить процент погрешности
     margin-top: 1px;
   }
