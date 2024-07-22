@@ -15,6 +15,7 @@ const hideSliderOverlay = (slide) => {
 };
 
 slides.forEach((slide) => {
+  // фокус
   slide.addEventListener('focus', () => {
     slides.forEach((slideItem) => {
       hideSliderOverlay(slideItem);
@@ -22,10 +23,12 @@ slides.forEach((slide) => {
     showSlideOverlay(slide);
   });
 
+  // снятие фокуса
   slide.addEventListener('blur', () => {
     hideSliderOverlay(slide);
   });
 
+  // наведение на слайд
   slide.addEventListener('mouseover', () => {
     showSlideOverlay(slide);
   });

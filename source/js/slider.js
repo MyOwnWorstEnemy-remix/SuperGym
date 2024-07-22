@@ -17,11 +17,11 @@ new Swiper('.slider-juri', {
     768: {
       slidesPerView: 2,
       spaceBetween: 40,
+      simulateTouch: false,
     },
     1366: {
       slidesPerView: 4,
       spaceBetween: 40,
-      simulateTouch: false,
     },
   },
 });
