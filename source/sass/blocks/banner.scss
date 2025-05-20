@@ -1,18 +1,20 @@
 .banner {
   background-color: $background-color-banner;
   color: $text-color-secondary;
-  width: 210px;
-  padding: 40px;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 40px 20px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
   display: grid;
-  grid-template-columns: 117px 56px;
+  grid-template-columns: 65% 30%;
   grid-template-rows: auto auto auto;
   column-gap: 37px;
   row-gap: 16px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 220px;
     font-size: 18px;
     line-height: 24px;
@@ -31,7 +33,7 @@
 }
 
 .banner__title {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 54px;
   text-align: left;
 
@@ -62,6 +64,7 @@
   text-decoration: none;
   grid-column: 1/-1;
   grid-row: 3/4;
+  width: 90%;
 
   @media (min-width: $tablet-width) {
     min-height: 66px;
@@ -89,6 +92,7 @@
   margin: 0;
   margin-bottom: 6px;
   position: relative;
+  font-size: 16px;
 
   &::after {
     position: absolute;
@@ -130,7 +134,7 @@
 }
 
 .banner__number {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 24px;
   font-weight: 700;
 
@@ -141,7 +145,7 @@
 }
 
 .banner__date {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 12px;
   font-weight: 400;
 

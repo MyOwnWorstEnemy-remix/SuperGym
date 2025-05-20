@@ -1,7 +1,8 @@
 .form {
   background-color: $background-color-dark;
   color: $text-color-secondary;
-  width: 290px;
+  min-width: 290px;
+  width: 80%;
   padding: 70px 15px;
   margin: 0 auto;
   display: flex;

@@ -3,7 +3,8 @@
 }
 
 .footer__wrapper {
-  width: 290px;
+  min-width: 290px;
+  width: 80%;
   padding: 41px 15px 40px;
   margin: 0 auto;
   color: $text-color-secondary;
