@@ -41,5 +41,9 @@
   @media (min-width: $desktop-width) {
     width: 660px;
     height: 500px;
+
+    img {
+      height: 500px;
+    }
   }
 }

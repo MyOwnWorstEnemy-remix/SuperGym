@@ -26,9 +26,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 340px;
-    padding: 60px 80px 98px;
-    grid-template-columns: 168px 95px;
+    width: 360px;
+    padding: 60px 70px 98px;
+    grid-template-columns: 175px 95px;
     column-gap: 77px;
     row-gap: 30px;
   }
@@ -40,7 +40,7 @@
   text-align: left;
 
   @media (min-width: $desktop-width) {
-    font-size: 82px;
+    font-size: 65px;
     line-height: 96px;
   }
 }
