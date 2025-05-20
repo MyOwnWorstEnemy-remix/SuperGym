@@ -5,7 +5,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 678px;
+    min-width: 678px;
+    width: 70%;
     padding: 60px 45px;
     display: flex;
   }
@@ -28,8 +29,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 378px;
+    min-width: 378px;
+    width: 60%;
     height: 348px;
+
+    img {
+      height: 348px;
+    }
   }
 
   @media (min-width: $desktop-width) {

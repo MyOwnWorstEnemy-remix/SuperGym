@@ -6,9 +6,10 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 678px;
+    min-width: 678px;
     padding: 0 45px 100px;
     display: flex;
+    justify-content: space-between;
     gap: 30px;
   }
 
@@ -27,8 +28,9 @@
   margin: auto 0;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
-    grid-template-columns: 113px 185px;
+    min-width: 324px;
+    width: 50%;
+    grid-template-columns: 35% 60%;
     column-gap: 26px;
     margin: 31px 0;
   }
@@ -61,7 +63,7 @@
 
 .hero__city {
   font-family: $primary-font;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 25px;
   font-weight: 600;
   margin: 0;
@@ -69,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
-    font-size: 42px;
+    font-size: 33px;
     line-height: 42px;
   }
 
@@ -91,8 +93,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
-    font-size: 72px;
-    line-height: 85px;
+    font-size: 40px;
+    line-height: 65px;
     letter-spacing: 2px;
     margin-right: -1px;
   }
