@@ -2,6 +2,7 @@
   background-color: $background-color-secondary;
 
   @media (min-width: $tablet-width) {
+    overflow: hidden;
     background-position: bottom right;
     background-repeat: no-repeat;
     background-image:
